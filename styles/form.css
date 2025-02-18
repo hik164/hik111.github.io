@@ -1,0 +1,72 @@
+/* убераем все отступы страницы */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+/* размещаем форму по центру страницы */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../media/фон\ записи.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* настраиваем заголовок формы */
+h1 {
+    color: rgb(230, 211, 184);
+    padding-bottom: 20px;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+/* настраиваем рамку вокруг формы */
+.form-container {
+    background-color: rgba(78, 78, 78, 0.486);
+    box-shadow: 0 0 50px black;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 30px;
+}
+/* общие настроики ко всем инпутам */
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(66, 66, 66, 0.356);
+    color: rgba(197, 188, 145, 0.993);
+}
+/* делаем анимацию рамки(не заполнено поле-красная рамка,заполнено-зеленая) */
+.text-one, .text-two, .text-three {
+    border-style: none;
+    border: 2px solid green;
+    outline: none;
+    transition: border-color 1s;
+}
+/* устанавливаем цвет при пустом поле */
+input:placeholder-shown {
+    border-color: brown;
+}
+/* настраиваем цвет подсказки внутри поля */
+input::placeholder {
+    color: rgba(197, 188, 145, 0.993);
+    font-size: 15px;
+}
+/* настраиваем текст к дате */
+label {
+    font-size: 20px;
+    color: rgba(209, 201, 155, 0.993);
+}
+/* настраиваем поле дата */
+.date, .time {
+    border-style: none;
+    outline: none;
+    border: rgb(110, 110, 110) solid 2px;
+}
+/* настраиваем кнопки */
+.sumbit, .button{
+    border-style: none;
+    outline: none;
+    border: rgb(110, 110, 110) solid 2px;
+    width: 115px;
+    cursor: pointer;
+}

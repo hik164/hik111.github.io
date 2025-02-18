@@ -1,0 +1,74 @@
+/* размещение логотипа и настройка его размера */
+.logo {
+    margin-right: 10px;
+    margin-left: 5px;
+    max-width: 75px;
+}
+
+/* настройка заголовка */
+h1 {
+    /* размещение заголовка напротив логотипа */
+    display: flex;
+    align-items: center;
+    color: rgb(223, 195, 170);
+}
+
+/* размещение на шапке по разным сторонам лого и навигационнной панели */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(75, 75, 75);
+}
+/* настройка заднего фона навигационной панели и расположение в строку */
+.nav-container {
+    display: flex;
+    background-color: rgba(99, 99, 99, 0.568);
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 0 30px;
+}
+/* настройка текста в навигационной панели */
+.nav-container>a {
+    display: block;
+    padding: 26px;
+    padding-top: 26px;
+    text-decoration: none;
+    color: rgb(230, 218, 201);
+    text-shadow: 0 0 15px rgb(0, 0, 0);
+    font-size: 20px;
+}
+/* цвет при наведении на ссылку в навигационной панели */
+.nav-container>a:hover {
+    background-color: rgba(114, 114, 114, 0.582);
+    border-radius: 30px;
+}
+/* настройка иконки для мобильных устройств */
+.nav-icon>img{
+    /* скрываем еe на пк */
+    display: none;
+}
+
+@media (max-width: 950px) {
+.nav-icon>img{
+    /* настраеваем размеры иконки меню */
+    margin-top: 4px;
+    margin-right: 4px;
+    padding: 10px;
+    width: 45px;
+    background-color: rgba(99, 99, 99, 0.568);
+    border-radius: 50px;
+    /* делаем курсор при наведении */
+    cursor: pointer;
+    display: block;
+}
+.nav-container{
+    display: none;
+}
+
+.drop:hover>.nav-container {
+    display: block;
+    position: absolute;
+    right: 0.1px;
+    top: 75px;
+}
+    
+}
