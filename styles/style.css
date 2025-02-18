@@ -8,22 +8,3 @@
 body {
     background-color: rgba(255, 228, 196, 0.37);
 }
-
-.inf-text {
-    padding-left: 15px;
-    color: rgb(216, 197, 173);
-    text-shadow: 0 0 15px rgb(0, 0, 0);
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 2vw;
-}
-.inf-text>h2{
-    padding-bottom: 20px;
-}
-.inf-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(32, 32, 32, 0.692);
-    border-radius: 0 0 15px 15px ;
-}
